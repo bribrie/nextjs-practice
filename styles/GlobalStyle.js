@@ -8,11 +8,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html,body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
+  }
+
+  li, ul {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
   }
 `;
 
