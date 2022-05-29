@@ -18,12 +18,10 @@ function HomePage(props) {
 }
 
 //getStaticProps ->빌드 프로세스에서 사전 렌더링
-//사전 렌더링 시점에 이 함수를 찾아서 실행
-//페이지 컴포넌트에서만 작동
 export async function getStaticProps() {
   //never execute on the client-side, 클라이언트에서 실행되지 않음
   const client = await MongoClient.connect(
-    "mongodb+srv://brie:bAcrAoU3yc4T7yA9@cluster0.vvwxfmp.mongodb.net/meetups?retryWrites=true&w=majority"
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vvwxfmp.mongodb.net/meetups?retryWrites=true&w=majority`
   );
   const db = client.db();
   const meetupsCollection = db.collection("meetups");
