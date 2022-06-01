@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 `;

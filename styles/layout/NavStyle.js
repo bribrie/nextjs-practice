@@ -10,7 +10,7 @@ export const Header = styled.header`
   padding: 0 10%;
 
   a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #dfe7ea;
 
@@ -23,7 +23,7 @@ export const Header = styled.header`
 
 export const Logo = styled.div`
   display: flex;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: bold;
 `;

@@ -11,7 +11,8 @@ export const ImageBox = styled.div`
 `;
 
 export const Content = styled.div`
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
 
   h1 {
     font-size: 2rem;

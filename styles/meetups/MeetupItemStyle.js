@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.li`
-  margin: 2rem 0;
+  margin-bottom: 2.5rem;
 `;
 
 export const ImgWrapper = styled.div`
