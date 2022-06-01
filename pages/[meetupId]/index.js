@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import { Loading } from "@/styles/meetups/MeetupDetailStyle";
 
 function MeetupDetailPage({ meetupData }) {
-  const { image, title, address, description } = meetupData;
   const router = useRouter();
 
   // fallback ver.
@@ -16,14 +15,14 @@ function MeetupDetailPage({ meetupData }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{meetupData.title}</title>
+        <meta name="description" content={meetupData.description} />
       </Head>
       <MeetupDetail
-        imageUrl={image}
-        title={title}
-        address={address}
-        description={description}
+        imageUrl={meetupData.image}
+        title={meetupData.title}
+        address={meetupData.address}
+        description={meetupData.description}
       />
     </>
   );
