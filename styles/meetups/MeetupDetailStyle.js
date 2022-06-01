@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   text-align: center;
+`;
 
+export const ImageBox = styled.div`
   img {
-    width: 100%;
-    border-radius: 6px;
+    border-radius: 8px;
   }
 `;
 
@@ -24,4 +25,11 @@ export const Content = styled.div`
     font-style: italic;
     padding-top: 0.5rem;
   }
+`;
+
+export const Loading = styled.div`
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
 `;
