@@ -7,7 +7,7 @@ function MeetupList({ meetups }) {
         <MeetupItem
           key={meetup.id}
           id={meetup.id}
-          image={meetup.image}
+          imageUrl={meetup.image}
           title={meetup.title}
           address={meetup.address}
         />
