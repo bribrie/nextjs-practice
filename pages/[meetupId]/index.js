@@ -1,9 +1,18 @@
 import MeetupDetail from "@/meetups/MeetupDetail";
 import { MongoClient, ObjectId } from "mongodb";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { Loading } from "@/styles/meetups/MeetupDetailStyle";
 
 function MeetupDetailPage({ meetupData }) {
   const { image, title, address, description } = meetupData;
+  const router = useRouter();
+
+  // fallback ver.
+  if (router.isFallback) {
+    return <Loading>Loading...</Loading>;
+  }
+
   return (
     <>
       <Head>
@@ -11,7 +20,7 @@ function MeetupDetailPage({ meetupData }) {
         <meta name="description" content={description} />
       </Head>
       <MeetupDetail
-        image={image}
+        imageUrl={image}
         title={title}
         address={address}
         description={description}
@@ -31,7 +40,7 @@ export async function getStaticPaths() {
 
   client.close();
   return {
-    fallback: blocking,
+    fallback: true,
     paths: meetups.map((meetup) => ({
       params: {
         meetupId: meetup._id.toString(),
