@@ -4,5 +4,5 @@
 - **Meetups을 볼 수 있고, 새로운 Meetup을 만들 수 있음.**  
 - React guide with Next.js를 수강하며 강의 내용 + 추가 공부한 내용을 추가해서 만듦.
 - 스택 : React/hooks, Next.js, Styled-components, MongoDB, Vercel
-- 배포 : [React Meetups](nextjs-practice-bribrie.vercel.app)
+- 배포 : [React Meetups](https://nextjs-practice-bribrie.vercel.app/)
 - 공부 내용 기록 : [Study](https://github.com/bribrie/nextjs-practice/issues)
